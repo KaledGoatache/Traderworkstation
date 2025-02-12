@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 2;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-column {
+    width: 33%;
+    padding: 20px;
+    background-color: #2c3e50;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-column button {
+    width: 80%;
+    padding: 50px;
+    margin-bottom: 10px;
+    background-color: #34495e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.left-column button:hover {
+    background-color: #2980b9;
+}
+
+.right-column {
+    width: 67%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.right-column p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.right-column .image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trader Workstation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- En-tête avec le titre du site -->
+    <header>
+        <h1>Trader Workstation</h1>
+    </header>
+
+    <!-- Conteneur principal divisé en deux colonnes -->
+    <div class="container">
+
+        <!-- Colonne de gauche avec les boutons de navigation -->
+        <div class="left-column">
+            <button onclick="window.location.href='cac40.html'">CAC 40 (FRA)</button>
+            <button onclick="window.location.href='sp500.html'">S&P 500 (USA)</button>
+            <button onclick="window.location.href='https://en.wikipedia.org/wiki/Nikkei_225'">NIKKEI 225 (JAP)</button>
+            <button onclick="window.location.href='https://en.wikipedia.org/wiki/DAX'">DAX 40 (GER)</button>
+            <button onclick="window.location.href='https://en.wikipedia.org/wiki/FTSE_100_Index'">FTSE 100 (UK)</button>
+            <button onclick="window.location.href='https://en.wikipedia.org/wiki/Índice_Bursátil_de_Capitalización'">IBVC (VEN)</button>
+        </div>
+
+        <div class="right-column">
+    <section>
+        <p>Bienvenue sur Trader Workstation, la plateforme idéale pour améliorer votre expérience de trading. Accédez à une gamme complète d'outils de trading, d'analyses en temps réel et de ressources éducatives adaptées à tous les niveaux.</p>
+
+        <p>Grâce à nos graphiques personnalisables, indicateurs techniques avancés et alertes de marché, vous pouvez suivre les tendances et gérer vos investissements avec précision. Profitez également de nos formations, webinaires et ressources pour approfondir vos connaissances en trading.</p>
+
+        <p>Notre plateforme vous offre aussi des outils de gestion des risques et une automatisation avancée pour optimiser vos stratégies. De plus, notre support client est disponible 24/7 pour vous assister à chaque étape de votre parcours.</p>
+    </section>
+
+            <img src="INDICESB.jpeg" class="image">
+        </div>
+    </div>
+
+    <!-- Script pour gérer la transition automatique du diaporama -->
+    <script src="slideshow.js"></script>
+
+</body>
+</html>
